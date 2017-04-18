@@ -15,14 +15,18 @@ public class ServerThread extends Thread{
 	ObjectOutputStream oos;
 		
 	public ServerThread(Socket clientSocket) {
+		
 		this.clientSocket = clientSocket;
 		try {
+			
 			dao = new SnakeDAO();
 			ois = new ObjectInputStream(clientSocket.getInputStream());
-			oos = new ObjectOutputStream(clientSocket.getOutputStream());			
+			oos = new ObjectOutputStream(clientSocket.getOutputStream());
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+		
 	}
 	
 	@Override

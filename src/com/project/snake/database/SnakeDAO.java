@@ -15,8 +15,8 @@ public class SnakeDAO {
 			
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String uid = "hr";
-			String upw = "hr";
+			String uid = "dd";
+			String upw = "1234";
 			connection = DriverManager.getConnection(url, uid, upw);
 		} catch (Exception e) {
 			e.printStackTrace();

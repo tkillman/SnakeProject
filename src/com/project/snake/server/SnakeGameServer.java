@@ -27,15 +27,18 @@ public class SnakeGameServer {
 				serverThread.start();											//»£√‚
 				System.out.println(clientSocket.getInetAddress()+":connect");
 			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
+			
 			try {
 				if(clientSocket!=null) clientSocket.close();
 				if(serverSocket!=null) serverSocket.close();
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
+			
 		}
 	}
 }

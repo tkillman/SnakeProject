@@ -1,0 +1,9 @@
+
+create table snake_members(
+id varchar2(50)
+,password varchar2(100)
+,t_score number default 0
+,t_food number default 0
+,t_level number default 0
+,t_time number default 0
+)

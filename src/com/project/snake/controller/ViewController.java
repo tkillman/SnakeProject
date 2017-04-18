@@ -212,7 +212,7 @@ public class ViewController implements Initializable {
 		overQuitLabel.setOnMouseClicked(event->{ overPanel.setVisible(false); loginPanel.setVisible(true); game_ctr.quitGame();	});
 		
 		pauseResumeLabel.setOnMouseClicked(event->{	gamePauseView(); });
-	}
+	} //initialize 종료
 	
 	//-------------------------------- GUI Update --------------------------------
 	
@@ -305,6 +305,7 @@ public class ViewController implements Initializable {
 			}
 		}
 	}
+	
 	//게임을 시작하면 보여지는 화면설정
 	public void startView(Point head, Point tail, Point food){
 
